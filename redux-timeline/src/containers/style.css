@@ -1,0 +1,55 @@
+@import "src/VerticalTimeline.css";
+@import "src/VerticalTimelineElement.css";
+
+.second_item {
+  
+}
+.second_item svg {
+  top: 6px;
+  left: 6px;
+  position: relative;
+}
+
+.cron_line{
+width: 3px;
+height: 100%;
+position: absolute;
+left: 0px;
+display: block;
+background: #dde5e7;
+z-index: 0;
+top: 0px;
+}
+
+.cron_line.start{
+top: 75px;
+height: calc(100% - 75px);
+}
+
+.cron_line.start_end{
+top: 75px !important;
+height: calc(100% - 125px)!important;
+}
+
+#noteId1{
+top: 75px;
+height: calc(100% - 75px);
+}
+
+.cron_line.end{
+bottom: 50px;
+height: calc(100% - 50px);
+}
+
+
+.cron_line.end:after{
+width: 20px;
+height: 20px;
+background: #dde5e7;
+border-radius: 55%;
+position: absolute;
+content: "";
+bottom: 0px;
+margin-bottom: -2px;
+left: -8px;
+}
